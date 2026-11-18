@@ -8,7 +8,7 @@
  [![Rust](https://img.shields.io/badge/rust-1.85%2B-orange.svg)](https://www.rust-lang.org)
  [![GPUI Kit](https://img.shields.io/badge/GPUI_Kit-0.10-blue)](https://github.com/longbridge/gpui-kit)
 
- [фишки](#фишки) · [скриншоты](#скриншоты) · [установка](#установка) · [данные](#хранение-данных) · [FAQ](#faq) · [лицензия](#лицензия)
+ [фишки](#фишки) · [скриншоты](#скриншоты) · [установка](#установка) · [хранение данных](#хранение-данных) · [FAQ](#faq) · [лицензия](#лицензия)
 
 </div>
 
@@ -63,7 +63,7 @@ _будет заполнено после первого рабочего рел
 | `messages.db` | `~/.local/share/crabrade/` | `%LOCALAPPDATA%\crabrade\` | `~/Library/Application Support/crabrade/` | локальный архив сообщений |
 | кеш | `~/.cache/crabrade/` | `%LOCALAPPDATA%\crabrade\` | `~/Library/Caches/crabrade/` | аватарки, медиа |
 
-## faq
+## FAQ
 
 **это официальный клиент?** хотя разработка поддерживалась владельцем [sharada](https://github.com/sharada-social), это сторонний клиент, использующий публичный API.
 
@@ -83,4 +83,4 @@ _будет заполнено после первого рабочего рел
 
 код проекта распространяется по [GNU AGPL-3.0](LICENSE). это значит, что если вы используете код crabrade в своих проектах, эти проекты также должны следовать этой лицензии и быть открытыми.
 
-лицензии на `/assets` нет, можно использовать свободно.
+лицензии на [`/assets`](https://github.com/pansangg/crabrade/tree/main/assets) нет, можно использовать свободно.
