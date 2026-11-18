@@ -180,7 +180,6 @@ mod tests {
 
         let message = channel.last_message.as_ref().unwrap();
         assert_eq!(message.body(), "Пожалуйста, обновите свой клиент sharada!");
-        // Именно это и проверяем: сервер прислал сообщение без этих полей
         assert!(message.sender_name.is_none());
         assert!(message.sender_display_name.is_none());
     }
