@@ -81,23 +81,23 @@ pub struct Message {
     pub created_at: String,
 }
 
-#[derive(Debug, Clone, Deserialize)]
-pub struct TotpSetup {
-    #[serde(default)]
-    pub totp_secret: Option<String>,
-    #[serde(default)]
-    pub totp_qr_data_uri: Option<String>,
-    #[serde(default)]
-    pub totp_auth_url: Option<String>,
-    #[serde(default)]
-    pub temp_session_token: Option<String>,
-}
+// #[derive(Debug, Clone, Deserialize)]
+// pub struct TotpSetup {
+//     #[serde(default)]
+//     pub totp_secret: Option<String>,
+//     #[serde(default)]
+//     pub totp_qr_data_uri: Option<String>,
+//     #[serde(default)]
+//     pub totp_auth_url: Option<String>,
+//     #[serde(default)]
+//     pub token: Option<String>,
+// }
 
 #[derive(Debug, Clone)]
 pub enum LoginOutcome {
     Success { token: String, user: User },
     RequireTotp { message: Option<String> },
-    SetupTotp(TotpSetup),
+    // SetupTotp(TotpSetup),
 }
 
 impl User {
